@@ -1,0 +1,50 @@
+# arframer
+
+```{r, eval=TRUE, include=FALSE}
+library(htmltools)
+```
+
+Augmented Reality with [aframer](http://aframer.john-coene.com).
+
+## Installation
+
+```{r, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("JohnCoene/arframer")
+```
+
+## Example
+
+Point your camera to a [hiro marker](https://github.com/jeromeetienne/AR.js/blob/master/data/images/HIRO.jpg).
+
+```{r eval = FALSE}
+library(aframer)
+library(arframer)
+
+browse_aframe(
+  ar_scene(
+    a_box(
+      position = "0 0.5 0",
+      material = "opacity: 0.5;"
+    ),
+    a_primitive(
+      "marker-camera",
+      list(
+        preset = "hiro"
+      )
+    )
+  )
+)
+```
+
+Hit the button below to view the output of the above, you'll have to point your camera to [hiro marker](https://github.com/jeromeetienne/AR.js/blob/master/data/images/HIRO.jpg).
+
+```{r, echo=FALSE}
+tags$a(
+  tags$i(class = "fa fa-lg fa-eye"),
+  " Demo",
+  href = "example.html",
+  target = "_blank",
+  class = "btn btn-lg btn-primary btn-blue"
+)
+```

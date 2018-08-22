@@ -1,0 +1,25 @@
+template:
+  params:
+    bootswatch: paper
+    ganalytics: UA-74544116-1
+
+development:
+  mode: unreleased
+
+authors:
+  John Coene:
+    href: http://john-coene.com
+
+navbar:
+  title: "arframer"
+  left:
+    - icon: fa-lg fa-home
+      href: index.html
+    - icon: fa-lg fa-book
+      text: "Reference"
+      href: "reference/"
+  right:
+    - icon: fa-github fa-lg
+      href: https://github.com/JohnCoene/arframer
+    - icon: fa-bitbucket fa-lg
+      href: https://bitbucket.org/JohnCoene/arframer
