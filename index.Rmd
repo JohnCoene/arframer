@@ -4,7 +4,21 @@
 library(htmltools)
 ```
 
-Augmented Reality with [aframer](http://aframer.john-coene.com).
+```{r, echo=FALSE}
+div(
+  class = "row",
+  div(
+    class = "col-md-3",
+    img(src = "logo.png")
+  ),
+  div(
+    class = "col-md-9",
+    p(
+      "Augmented Reality in R."
+    )
+  )
+)
+```
 
 ## Installation
 

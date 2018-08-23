@@ -12,6 +12,7 @@
 <script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
 <meta property="og:title" content="Augmented Reality with 'aframer'">
 <meta property="og:description" content="Augmented reality with 'aframer'.">
+<meta property="og:image" content="/logo.png">
 <meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -87,31 +88,38 @@
 <div id="arframer" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#arframer" class="anchor"></a>arframer</h1></div>
-<p>Augmented Reality with <a href="http://aframer.john-coene.com">aframer</a>.</p>
+<div class="row">
+<div class="col-md-3">
+<img src="logo.png">
+</div>
+<div class="col-md-9">
+<p>Augmented Reality in R.</p>
+</div>
+</div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("devtools")</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"JohnCoene/arframer"</span>)</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("devtools")</span>
+devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"JohnCoene/arframer"</span>)</code></pre></div>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example" class="anchor"></a>Example</h2>
 <p>Point your camera to a <a href="https://github.com/jeromeetienne/AR.js/blob/master/data/images/HIRO.jpg">hiro marker</a>.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(aframer)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">library</span>(arframer)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="kw">browse_aframe</span>(</a>
-<a class="sourceLine" id="cb2-5" data-line-number="5">  <span class="kw"><a href="reference/arframer.html">ar_scene</a></span>(</a>
-<a class="sourceLine" id="cb2-6" data-line-number="6">    <span class="kw">a_box</span>(</a>
-<a class="sourceLine" id="cb2-7" data-line-number="7">      <span class="dt">position =</span> <span class="st">"0 0.5 0"</span>,</a>
-<a class="sourceLine" id="cb2-8" data-line-number="8">      <span class="dt">material =</span> <span class="st">"opacity: 0.5;"</span></a>
-<a class="sourceLine" id="cb2-9" data-line-number="9">    ),</a>
-<a class="sourceLine" id="cb2-10" data-line-number="10">    <span class="kw"><a href="reference/arframer.html">ar_marker_camera</a></span>(</a>
-<a class="sourceLine" id="cb2-11" data-line-number="11">      <span class="dt">preset =</span> <span class="st">"hiro"</span></a>
-<a class="sourceLine" id="cb2-12" data-line-number="12">    )</a>
-<a class="sourceLine" id="cb2-13" data-line-number="13">  )</a>
-<a class="sourceLine" id="cb2-14" data-line-number="14">)</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(aframer)
+<span class="kw">library</span>(arframer)
+
+<span class="kw"><a href="http://www.rdocumentation.org/packages/aframer/topics/view">browse_aframe</a></span>(
+  <span class="kw"><a href="reference/arframer.html">ar_scene</a></span>(
+    <span class="kw"><a href="http://www.rdocumentation.org/packages/aframer/topics/primitives">a_box</a></span>(
+      <span class="dt">position =</span> <span class="st">"0 0.5 0"</span>,
+      <span class="dt">material =</span> <span class="st">"opacity: 0.5;"</span>
+    ),
+    <span class="kw"><a href="reference/arframer.html">ar_marker_camera</a></span>(
+      <span class="dt">preset =</span> <span class="st">"hiro"</span>
+    )
+  )
+)</code></pre></div>
 <p>Hit the button below to view the output of the above, you’ll have to point your camera to <a href="https://github.com/jeromeetienne/AR.js/blob/master/data/images/HIRO.jpg">hiro marker</a>.</p>
 <a href="example.html" target="_blank" class="btn btn-lg btn-primary btn-blue">
 <i class="fa fa-lg fa-eye"></i>
