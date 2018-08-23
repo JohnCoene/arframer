@@ -132,7 +132,8 @@
 
     <pre class="usage"><span class='fu'>arframer_dependency</span>(<span class='kw'>cdn</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)
 
-<span class='fu'>ar_scene</span>(<span class='no'>...</span>, <span class='kw'>cdn</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)
+<span class='fu'>ar_scene</span>(<span class='no'>...</span>, <span class='kw'>cdn</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>arjs</span> <span class='kw'>=</span> <span class='kw pkg'>aframer</span><span class='kw ns'>::</span><span class='fu'><a href='http://www.rdocumentation.org/packages/aframer/topics/options'>opts_aframe</a></span>(<span class='kw'>debugUIEnabled</span> <span class='kw'>=</span>
+  <span class='st'>"false"</span>))
 
 <span class='fu'>embed_arframer</span>(<span class='no'>ar</span>)
 
@@ -152,6 +153,10 @@
       <td><p>Any <code>aframer</code> element or option.</p></td>
     </tr>
     <tr>
+      <th>arjs</th>
+      <td><p>AR.js options.</p></td>
+    </tr>
+    <tr>
       <th>ar</th>
       <td><p>And <code>arframer</code> scene.</p></td>
     </tr>
@@ -160,7 +165,7 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># use the primitive</span>
-<span class='fu'>ar_scene</span>()</div><div class='output co'>#&gt; &lt;a-scene arjs&gt;&lt;/a-scene&gt;</div><div class='input'>
+<span class='fu'>ar_scene</span>()</div><div class='output co'>#&gt; &lt;a-scene arjs="debugUIEnabled: false;"&gt;&lt;/a-scene&gt;</div><div class='input'>
 <span class='co'># OR</span>
 <span class='fu'>library</span>(<span class='no'>aframer</span>)
 

@@ -3,6 +3,7 @@
 #' Attach \code{aframer} and \code{arframer} dependency, primitives and embed.
 #'
 #' @param ar And \code{arframer} scene.
+#' @param arjs AR.js options.
 #' @param cdn Wether to use local of CDN for source files.
 #' @param ... Any \code{aframer} element or option.
 #'
@@ -30,7 +31,7 @@ arframer_dependency <- function(cdn = FALSE){
 
 #' @rdname arframer
 #' @export
-ar_scene <- function(..., cdn = FALSE, arjs = NA){
+ar_scene <- function(..., cdn = FALSE, arjs = aframer::opts_aframe(debugUIEnabled = "false")){
   aframer::a_scene(
     aframer::a_dependency(cdn = cdn),
     arframer_dependency(cdn = cdn),

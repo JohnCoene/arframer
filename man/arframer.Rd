@@ -10,7 +10,8 @@
 \usage{
 arframer_dependency(cdn = FALSE)
 
-ar_scene(..., cdn = FALSE)
+ar_scene(..., cdn = FALSE, arjs = aframer::opts_aframe(debugUIEnabled =
+  "false"))
 
 embed_arframer(ar)
 
@@ -22,6 +23,8 @@ a_marker_camera(...)
 \item{cdn}{Wether to use local of CDN for source files.}
 
 \item{...}{Any \code{aframer} element or option.}
+
+\item{arjs}{AR.js options.}
 
 \item{ar}{And \code{arframer} scene.}
 }
