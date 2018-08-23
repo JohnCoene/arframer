@@ -30,11 +30,11 @@ arframer_dependency <- function(cdn = FALSE){
 
 #' @rdname arframer
 #' @export
-ar_scene <- function(..., cdn = FALSE){
+ar_scene <- function(..., cdn = FALSE, arjs = NA){
   aframer::a_scene(
     aframer::a_dependency(cdn = cdn),
     arframer_dependency(cdn = cdn),
-    arjs = NA,
+    arjs = arjs,
     ...
   )
 }
