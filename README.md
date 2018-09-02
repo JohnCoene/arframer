@@ -1,5 +1,6 @@
 # arframer
 
+[AR.js](https://github.com/jeromeetienne/AR.js) for [aframer](https://aframer.john-coene.com/).
 
 ## Installation
 
@@ -9,8 +10,6 @@ devtools::install_github("JohnCoene/arframer")
 ```
 
 ## Example
-
-This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(aframer)
