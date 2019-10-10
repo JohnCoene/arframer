@@ -10,8 +10,11 @@
 \usage{
 arframer_dependency(cdn = FALSE)
 
-ar_scene(..., cdn = FALSE, arjs = aframer::opts_aframe(debugUIEnabled =
-  "false"))
+ar_scene(
+  ...,
+  cdn = FALSE,
+  arjs = aframer::opts_aframe(debugUIEnabled = "false")
+)
 
 embed_arframer(ar)
 

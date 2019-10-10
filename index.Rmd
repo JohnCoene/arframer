@@ -66,19 +66,3 @@ tags$a(
   class = "btn btn-lg btn-primary btn-blue"
 )
 ```
-
-## Extensive Example
-
-The augmented version of the World Economic Forum's [Transformation Maps](https://toplink.weforum.org/).
-
-> Transformation Maps are the World Economic Forum’s dynamic knowledge tool. They help users to explore and make sense of the complex and interlinked forces that are transforming economies, industries and global issues. The maps present insights written by experts along with machine-curated content. Together, this allows users to visualise and understand more than 120 topics and the connections and inter-dependencies between them, helping in turn to support more informed decision-making by leaders.
-
-```{r, echo=FALSE}
-tags$a(
-  tags$i(class = "fa fa-lg fa-map"),
-  " Augmented Maps",
-  href = "https://am.john-coene.com",
-  target = "_blank",
-  class = "btn btn-lg btn-primary btn-blue"
-)
-```
