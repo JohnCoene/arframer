@@ -60,4 +60,15 @@ ar_marker_camera <- function(...){
 
 #' @rdname arframer
 #' @export
+ar_marker <- function(...){
+  aframer::a_primitive(
+    "marker",
+    list(
+      ...
+    )
+  )
+}
+
+#' @rdname arframer
+#' @export
 a_marker_camera <- ar_marker_camera

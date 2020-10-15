@@ -9,6 +9,6 @@ Encoding: UTF-8
 LazyData: true
 Imports: htmltools, aframer
 Remotes: JohnCoene/aframer
-RoxygenNote: 6.1.99.9001
+RoxygenNote: 7.1.1.9000
 URL: http://arframer.john-coene.com/
 BugReports: https://github.com/JohnCoene/arframer/issues

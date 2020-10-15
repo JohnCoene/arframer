@@ -5,6 +5,7 @@
 \alias{ar_scene}
 \alias{embed_arframer}
 \alias{ar_marker_camera}
+\alias{ar_marker}
 \alias{a_marker_camera}
 \title{Functions}
 \usage{
@@ -19,6 +20,8 @@ ar_scene(
 embed_arframer(ar)
 
 ar_marker_camera(...)
+
+ar_marker(...)
 
 a_marker_camera(...)
 }
